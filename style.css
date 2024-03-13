@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Futura Md BT';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    background-color: #0F0D0D;
+    position: relative;
+}
+
+/*! Custom Cursor*/
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #fcd3ff;
+    position: fixed;
+    z-index: 88;
+    border-radius: 50px;
+    border: none;
+    mix-blend-mode: difference;
+    transform: translate(calc(-50% + 15px), -50%);
+    pointer-events: none;
+    transition: all 200ms ease-out;
+    background-position: center;
+    background-size: cover;
+}
+
+/*! Page 1  */
+
+.page1 {
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+    z-index: 100;
+}
+
+/*! Navigation Bar */
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    z-index: 5;
+}
+
+nav #navLeft img {
+    width: 2rem;
+}
+
+nav #navLeft img:hover {
+    scale: 1.2;
+    transition: all linear 0.2s;
+}
+
+/* nav #navCenter ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav #navCenter ul li { 
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 15px;
+} */
+
+nav #navCenter ul li:hover {
+    cursor: pointer;
+    font-size: 16px;
+    transition: all linear 0.2s;
+}
+
+nav #navRight .circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+}
+
+nav #navRight .circle:hover {
+    cursor: pointer;
+    scale: 1.5;
+    transition: all linear 0.2s;
+}
+
+nav #navRight .hBurger{
+    height: auto;
+    width: auto;
+}
+
+.hBurger i{
+    display: none;
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+}
+
+/*! page 1 Content */
+
+.page1 .page1Content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.page1 .page1Content h1 {
+    font-size: 100px;
+    font-weight: 200;
+    word-spacing: -10px;
+    margin-bottom: -20px;
+}
+
+.page1 .page1Content h2 {
+    font-size: 100px;
+    font-weight: 200;
+    word-spacing: -10px;
+}
+
+.page1 .page1Content p {
+    color: #dadadadb;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10vh;
+}
+
+/*! Page 1 Video*/
+
+.page1 video {
+    margin-top: 10vh;
+    position: relative;
+    left: 50%;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*! Page2 */
+
+.page2 {
+    padding-top: 30vh;
+    width: 100vw;
+    min-height: 150vh;
+    position: relative;
+}
+
+/*! Page 2 Section Top */
+
+.page2 .sectionTop {
+    padding: 10px 5vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.page2 .sectionTop h2 {
+    color: #111;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 200;
+    opacity: 0;
+}
+
+.sectionTop h2 span {
+    color: #111;
+    text-transform: capitalize;
+    font-size: 15px;
+    opacity: 0;
+}
+
+.sectionTop #spanText {
+    display: flex;
+    align-items: center;
+}
+
+/*! Page 2 Section Left */
+
+.page2 .sectionLeft {
+    margin-left: 5vw;
+    width: 40%;
+    margin-top: 10vh;
+}
+
+.page2 .sectionLeft .sectionLeftTop {
+    width: 100%;
+    height: 25vh;
+    border-top: 2px solid #dadada;
+    padding: 2vh 3vh;
+}
+
+
+.page2 .sectionLeft .sectionLeftTop h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 200;
+    margin-bottom: 2vh;
+    color: #111;
+}
+
+.page2 .sectionLeft .sectionLeftTop p {
+    width: 50%;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: #111;
+}
+
+.page2 .sectionLeft .sectionLeftCenter {
+    width: 100%;
+    height: 25vh;
+    border-top: 2px solid #dadada;
+    padding: 2vh 3vh;
+}
+
+.page2 .sectionLeft .sectionLeftCenter h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 200;
+    margin-bottom: 2vh;
+    color: #111;
+}
+
+.page2 .sectionLeft .sectionLeftCenter p {
+    width: 50%;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: #111;
+}
+
+.page2 .sectionLeft .sectionLeftBottom {
+    width: 100%;
+    height: 25vh;
+    border-top: 2px solid #dadada;
+    padding: 2vh 3vh;
+}
+
+.page2 .sectionLeft .sectionLeftBottom h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 200;
+    margin-bottom: 2vh;
+    color: #111;
+}
+
+.page2 .sectionLeft .sectionLeftBottom p {
+    width: 50%;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: #111;
+}
+
+.page2 .sectionLeft .sectionLeftBottom button {
+    color: #520038;
+    padding: 4px 10px;
+    margin-top: 3vh;
+    background-color: #ffa7fc;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/*! Page 2 Section Right*/
+
+.page2 .sectionRight {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    overflow: auto;
+    opacity: 0;
+}
+
+.page2 .sectionRight img {
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    background-position: center;
+}
+
+/*! Page 3*/
+
+.page3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 200vh;
+    padding: 8vh 10vh;
+}
+
+.page3 h1 {
+    font-size: 100px;
+    color: #111;
+    font-weight: 500;
+    margin-bottom: 20vh;
+}
+
+/*! magnetic Ball*/
+
+.page3 .magBall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 50%;
+    background-color: #111;
+    color: #fff;
+    top: 3.5%;
+    right: 10%;
+    transition: all ease 0.1s;
+}
+
+.page3 .sections {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/*! Page 3 Section First*/
+
+.page3 .sections .leftSectionFirst {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+.page3 .sections .leftSectionFirst img {
+    width: 80%;
+    height: 90%;
+}
+
+.page3 .sections .leftSectionFirst h3 {
+    color: #111;
+    font-weight: 500;
+}
+
+.page3 .sections .leftSectionFirst p {
+    color: #111;
+}
+
+.page3 .sections .rightSectionFirst {
+    width: 50%;
+    height: 100%;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.page3 .sections .rightSectionFirst h3 {
+    color: #111;
+    font-size: 30px;
+}
+
+.page3 .sections .rightSectionFirst p {
+    color: #111;
+    font-size: 13px;
+}
+
+/*! Page 3 Section Second */
+
+.page3 .sections .leftSectionSecond {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page3 .sections .leftSectionSecond h3 {
+    color: #111;
+    font-size: 30px;
+    margin-right: 20vh;
+}
+
+.page3 .sections .leftSectionSecond p {
+    color: #111;
+    font-size: 13px;
+    margin-right: 20vh;
+}
+
+.page3 .sections .rightSectionSecond {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+.page3 .sections .rightSectionSecond img {
+    margin-left: 20%;
+    width: 80%;
+    height: 90%;
+    right: 0%;
+}
+
+.page3 .sections .rightSectionSecond h3,
+p {
+    font-weight: 500;
+    color: #111;
+}
+
+.page3 .sections .rightSectionSecond .subRightSecond {
+    margin-left: 20%;
+}
+
+/*! Page 3 Section Third */
+
+.page3 .sections .leftSectionThird {
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.page3 .sections .leftSectionThird video {
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.page3 .sections .leftSectionThird h3 {
+    font-weight: 500;
+    color: #111;
+}
+
+.page3 .sections .rightSectionThird {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.page3 .sections .rightSectionThird button {
+    color: #520038;
+    padding: 4px 10px;
+    margin-top: 3vh;
+    background-color: #ffa7fc;
+    border-radius: 50px;
+    border: none;
+}
+
+/*! Page 4  */
+
+.page4 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.page4 .hoverBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20vh;
+    margin-top: 2vh;
+}
+
+.hoverBox img {
+    opacity: 0;
+    position: absolute;
+    width: 25%;
+    object-fit: cover;
+}
+
+.hoverBox img:nth-child(1) {
+    left: 1%;
+    top: 20%;
+}
+
+.hoverBox img:nth-child(3) {
+    right: 5%;
+    top: 20%;
+    height: 60vh;
+}
+
+.page4 .hoverBox .hoverText {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.page4 .hoverBox .hoverText .hoverText1 {
+    font-size: 7vw;
+    color: white;
+}
+
+.page4 .hoverBox .hoverText .hoverText2 {
+    font-size: 7vw;
+    color: rgb(255, 122, 231);
+}
+
+.hoverBox:hover h1 {
+    transform: translateY(-100%);
+    transition: all ease 0.3s;
+}
+
+.hoverBox:hover img {
+    opacity: 1;
+    transform: translateY(-30%);
+    transition: ease-in 0.2s;
+}
+
+.hoverBox img {
+    pointer-events: none;
+}
+
+/*! page 5  */
+
+.page5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page5 header {
+    padding: 0% 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10vh;
+    margin-top: 1vh;
+}
+
+.page5 header h2 {
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+.page5 header h2 span {
+    color: #ebb4f9;
+}
+
+.page5 header button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 1.1vw;
+}
+
+.page5 .elems {
+    font-size: 3.5vh;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5vw;
+    border-bottom: 1px solid #dadada;
+    text-transform: capitalize;font-weight: 700;
+}
+
+.page5 .elems .elemLeft{
+    color: #555;
+}
+
+.page5 .elems:nth-child(2) {
+    border-top: 1px solid #dadada;
+}
+
+.elems .elemRight {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    font-weight: 500;
+    font-size: 3vh;
+    color: #555;
+}
+
+.elems .elemRight span {
+    margin-top:7vh;
+    color: #555;
+}
+
+
+.elems:hover .elemLeft{
+    color: #fff;
+    transition: all linear .2s;
+}
+
+.elems:hover .elemRight{
+    transition: all linear .2s;
+    color: #fff;
+}
+
+.elems:hover .elemRight>span{
+    color: #fff;
+    transition: all linear .2s;
+}

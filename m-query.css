@@ -1,0 +1,209 @@
+@media (max-width:850px) {
+
+    .main{
+        overflow-x: hidden;
+    }
+
+    #navCenter {
+        display: none;
+    }
+
+    #navRight .circle {
+        display: none;
+    }
+
+    nav #navRight .hBurger i {
+        display: block;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .page1 {
+        height: 100vh;
+    }
+
+    .page1Content {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .page2 .sectionTop h2 {
+        font-size: 30px;
+    }
+
+    .page2 .sectionTop h2:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .sectionTop #spanText {
+        display: inline-block;
+    }
+
+
+    .page2 .sectionLeft .sectionLeftTop h3 {
+        font-size: 2rem;
+    }
+
+    .page2 .sectionLeft .sectionLeftTop p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .page2 .sectionLeft .sectionLeftCenter h3 {
+        font-size: 2rem;
+    }
+
+    .page2 .sectionLeft .sectionLeftCenter p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .page2 .sectionLeft .sectionLeftBottom h3 {
+        font-size: 2rem;
+    }
+
+    .page2 .sectionLeft .sectionLeftBottom p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .page2 .sectionRight {
+        top: 40%;
+    }
+
+    .page2 .sectionRight img {
+        width: 55vw;
+        height: 90vh;
+    }
+
+    .page2 .sectionLeft .sectionLeftTop {
+        width: 80%;
+    }
+
+    .page2 .sectionLeft .sectionLeftCenter {
+        width: 80%;
+    }
+
+    .page2 .sectionLeft .sectionLeftBottom {
+        width: 80%;
+    }
+
+    .page3 {
+        padding: 0vh 2vw;
+    }
+
+    .page3 h1 {
+        margin-left: 5vw;
+        font-size: 8rem;
+    }
+
+    .page3 .magBall {
+        display: none;
+    }
+
+    .page3 .sections {
+
+        height:calc(200vh / 3);
+        margin-bottom: 10vh;
+    }
+
+    .page3 .sections .leftSectionFirst {
+        width: 70%;
+    }
+
+    .page3 .sections .leftSectionFirst img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .page3 .sections .leftSectionFirst h3 {
+        font-size: 2rem;
+    }
+
+    .page3 .sections .leftSectionFirst p {
+        font-size: 1.2rem;
+    }
+
+    .page3 .sections .rightSectionFirst {
+        width: 30%;
+    }
+
+    .page3 .sections .rightSectionFirst p {
+        font-size: 1.2rem;
+    }
+
+    .page3 .sections .leftSectionSecond {
+        width: 30%;
+    }
+
+    .page3 .sections .rightSectionSecond {
+        width: 70%;
+    }
+
+    .page3 .sections .rightSectionSecond img {
+        width: 100%;
+        height: 100%;
+        margin-left: 10%;
+    }
+
+    .page3 .sections .rightSectionSecond h3 {
+        font-size: 2rem;
+    }
+    .page3 .sections .rightSectionSecond p {
+        font-size: 1.2rem;
+    }
+
+    .page3 .sections .rightSectionSecond .subRightSecond{
+        margin-left: 10%;
+    }
+
+    .page3 .sections .leftSectionSecond p {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+
+    .page3 .sections .leftSectionSecond h3 {
+        margin-right: 0;
+    }
+
+    .page3 .sections .leftSectionThird {
+        width: 70%;
+    }
+
+    .page3 .sections .leftSectionThird video{
+        width: 90%;
+        height: 100%;
+    }
+
+    .page3 .sections .leftSectionThird h3{
+        font-size: 2rem;
+    }
+
+    .page3 .sections .leftSectionThird p{
+        font-size: 1.2rem;
+    }
+
+    .page3 .sections .rightSectionThird{
+        width: 30%;
+    }
+
+    .page3 .sections .rightSectionThird p{
+        font-size: 1.2rem;
+    }
+
+    .page3 .sections .rightSectionThird button{
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+
+    .page4{
+        height: 50vh;
+    }
+
+    .page4 .hoverBox .hoverText{
+        overflow-y: auto;
+    }
+
+}
